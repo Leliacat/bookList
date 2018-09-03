@@ -2,16 +2,19 @@
 .container{
     margin: 50px;
     display: flex;
-    
 }
 
 .book_details{
-    margin: 0 70px;
+    margin: 0 120px;
     text-align: center;
 }
 
 .book_img{
     height: auto;
     width: 300px;
-    margin: 20px;
+    margin: 20px 50px;
+}
+
+.clicked{
+ background-color: 	#F5F5F5 !important;
 }
