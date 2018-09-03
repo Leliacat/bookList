@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+
 class BookDetail extends Component {
     render(){
         if(!this.props.book){
-            return <div>Select a book to get started</div>
+            return <div className='book_details'><h3>Select a book to get started</h3></div>
         }
         return(
-            <div>
-                <h3>Details for:</h3>
-                <div>title: {this.props.book.title}</div>
+            <div className='book_details'>
+                <h6>Details for:</h6>
+                <div><h3>{this.props.book.title}</h3></div>
                 <div>Pages: {this.props.book.pages}</div>
+                <div>Author: {this.props.book.author}</div>
+                <img className='book_img' src={this.props.book.img} />
             </div>
         )
     }
